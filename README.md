@@ -26,5 +26,10 @@ In order to use this:
 Find the version of ruby used for development captured in the file, ".ruby-version".
 - Install the bundler gem: `gem install bundler`
 - Install the required gems: `bundle install`
+- For Ubuntu
+  - Install geckodriver (see: https://github.com/mozilla/geckodriver/releases)
+  - Install the X-Windows Virtual Frame Buffer: `sudo apt-get install xvfb`
+  - Add the Firefox Beta PPA: `sudo apt-add-repository ppa:mozillateam/firefox-next`
+  - Install firefox: `sudo apt-get install firefox`
 - Prepare a config file named, "config.yml".
 - Run the script: `ruby retrieveList.rb`

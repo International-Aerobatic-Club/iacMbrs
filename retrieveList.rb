@@ -77,7 +77,8 @@ class Golden
     click_button('loginButton')
 
     puts 'Navigating to download area'
-    link = find(:xpath, '//a[text()="Partner upload/download area"]')
+    link = find(:xpath, '//span[text()="upload/download area"]')
+    sleep(10)
     popup = window_opened_by do
       link.click
     end

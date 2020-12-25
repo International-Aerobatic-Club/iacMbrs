@@ -55,7 +55,7 @@ class Golden
     end
 
     Capybara.configure do |cap|
-      cap.current_driver = :golden
+      cap.default_driver = :golden
       cap.app_host = app_host
       cap.default_max_wait_time = 30 # seconds
     end
